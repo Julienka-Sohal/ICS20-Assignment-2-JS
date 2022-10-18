@@ -11,8 +11,8 @@
 function enterClicked() {
   //input
   const radiusForCircle = document.getElementById("radius-for-circle").value
-
+  const shortRadiusNumber = 2 * 3.14 * radiusForCircle
   // output
   document.getElementById("address").innerHTML =
-    "The circumference of this circle is " + 2 * 3.14 * radiusForCircle + "."
+    "The circumference of this circle is " + shortRadiusNumber.toFixed(2) + " cm."
 }
